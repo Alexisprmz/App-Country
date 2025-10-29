@@ -7,4 +7,6 @@ import { ChangeDetectionStrategy, Component } from '@angular/core';
   templateUrl: './footer.html',
   changeDetection: ChangeDetectionStrategy.OnPush,
 })
-export class Footer { }
+export class Footer {
+  currentYear = new Date().getFullYear();
+ }
